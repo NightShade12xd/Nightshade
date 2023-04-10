@@ -36,7 +36,7 @@ async def try_vanity(vanity: str, guild: str, token: str, session: httpx.AsyncCl
         else: 
             print(f"{Fore.RED}{vanity} URL'si alınamadı. Hata kodu: {resp.status_code}")
 
-        await asyncio.sleep(3)
+        await asyncio.sleep(1.5)
 
 async def main():
     token = input("Token -> ").strip()
